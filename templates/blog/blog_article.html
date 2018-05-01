@@ -1,0 +1,18 @@
+{% extends 'blog/blog_base.html' %}
+{% block content %}
+
+<div class="container col-md-8 col-lg-8 col-sm-10" style="padding:2%">
+    <div class="text-center">
+        <h1 class="display-4">{{article.title}}</h1>
+    </div>
+    <div class="text-center">
+        <p class="lead" style="color:#304FFE">{{article.author}}</p>
+        <p>{{article.date_published}}</p>
+    </div>
+    <hr class="my-4">
+    <div class="text-left">
+        <p>{{article.text}}</p>
+    </div>
+</div>
+
+{% endblock %}
