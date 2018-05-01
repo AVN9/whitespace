@@ -14,7 +14,7 @@ def index(request):
 def articles(request):
     article_list = Article.objects.all()
     # listing only 10 articles per page
-    paginator = Paginator(article_list, 10)
+    paginator = Paginator(article_list, 5)
     
     page_req = request.GET.get('page')
     try:
